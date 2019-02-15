@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>API VK</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.js"></script>
+	<script src="https://vk.com/js/api/openapi.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+</head>
+<body>
+	<div class="container">
+		<h1 id="header-info"></h1>
+		<div id="results"></div>		
+	</div>
+
+	<script id="user-template" type="text/x-handlebars-template">
+			{{#each items}}
+			<div class="friend">
+				<img src="{{photo_100}}" data-id={{id}}>
+				<div>{{first_name}} {{last_name}}</div>
+				<div>{{country.title}} {{city.title}}</div>
+				<div>{{university_name}}</div>
+				<div>{{bdate}}</div>
+			</div>
+			{{/each}}
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>

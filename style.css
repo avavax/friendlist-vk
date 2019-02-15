@@ -1,0 +1,28 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;	
+}
+#header-info {
+	text-align: center;		
+}
+#results {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.friend {
+	text-align: center;	
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 210px;
+	padding-top: 5px;	
+	margin: 5px;
+}
+.frinds div {
+	text-align: center;	
+}
